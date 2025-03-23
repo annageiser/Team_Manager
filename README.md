@@ -12,21 +12,27 @@ Group project for the module 'Internet Technology'. It is a minimal web-based te
 TeamManager is a team management tool that allows coaches and players to organize training sessions, matches, and team communication efficiently.
 
 ### User Stories
-1.	As an Admin, I want to have a web app accessible on mobile and desktop.
-2.	As an Admin, I want to create and manage teams and players.
-3.	As an Admin, I want to schedule training sessions and matches.
-4.	As an Admin, I want to track player attendance for each session.
-5.	As an Admin, I want to send notifications to players.
-6.	As a Player, I want to confirm my attendance for a training or match.
-7.	As a Player, I want to view my team’s schedule.
-8.	As a Player, I want to receive updates about changes to the schedule.
+1.	As an Admin, I want to be able to modify all existing teams.
+2.	As an Admin, I want to be able to create teams.
+3.	As a User (Coach), I want to create teams, update/modify my teams and invite players to my teams.
+4.	As a User (Coach), I want to schedule training sessions and matches for my team.
+5.	As a User (Coach), I want review the available and unavailable players for the scheduled training sessions and matches of my team.
+6.	As a User (Coach), I want to send notifications to players about scheduled trainings and matches of my team.
+7.	As a User (Player), I want to join teams via an invite from the creator of the team within TeamManager.
+8.	As a User (Player), I want to receive notifications about future scheduled trainings and matches of my team.
+9.	As a User (Player), I want to mark myself as available or unavailable for future scheduled trainings and matches of my team.
 
 ### Use Case
-1.	UC-1 [Manage Teams]: Admin can create, update, and delete teams.
-2.	UC-2 [Manage Players]: Admin can add or remove players from teams.
-3.	UC-3 [Schedule Events]: Admin can create training sessions and matches.
-4.	UC-4 [Track Attendance]: Players can mark attendance, and the admin can review it.
-5.	UC-5 [Send Notifications]: Admin can notify players about schedule updates.
+UC-1 [Modify Teams]: Admin can update or delete all existing teams. 
+UC-2 [Create Teams]: Admin can create new teams. 
+UC-3 [Manage Teams as Coach]: Coach can create teams, update teams, and invite players. 
+UC-4 [Schedule Training and Matches]: Coach can create training sessions and matches for their team. 
+UC-5 [Review Player Availability]: Coach can view available and unavailable players for scheduled events. 
+UC-6 [Send Notifications]: Coach can send notifications to players about upcoming trainings and matches. 
+UC-7 [Join Teams]: Players can accept invitations from a coach to join a team. 
+UC-8 [Receive Notifications]: Players receive notifications about future scheduled events. 
+UC-9 [Mark Availability]: Players can mark themselves as available or unavailable for scheduled training sessions and matches.
+
 
 ## Design
 ...
