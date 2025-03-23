@@ -42,7 +42,8 @@ TeamManager is a team management tool that allows coaches and players to organiz
 ### Prototype
 🚧 A clickable prototype can be designed using Budibase or Figma before connecting to the backend.
 
-### Domain Design
+### Domain Model
+![6d06fa22-0919-46d3-9cb8-63fd5a073ae2](https://github.com/user-attachments/assets/9038eea1-da37-45c1-be5f-c59f54a04ac8)
 
 •	Team (id, name, coach_id)
 •	Player (id, name, team_id, email)
