@@ -23,6 +23,8 @@ TeamManager is a team management tool that allows coaches and players to organiz
 9.	As a User (Player), I want to mark myself as available or unavailable for future scheduled trainings and matches of my team.
 
 ### Use Case
+![XP7DJiCm383lUGfh9pWCYV-V0zgq6r8HsiO3U8dNMUG7fUvGXNXt5gKzB1Jj5iMVxS_sh16CqZghB6q5943aUYTWE98M3bufr18Yp8rZtxyN0VMkVxzPx2WgbN3qjIMOh0aTLEYn9aTUODKrGcu2tme0SY6OJk6i2eQt7IIyEOSdU5zCBmja4Gc5Zf0hbPZi08d9dJ83sEH83rydzb_a](https://github.com/user-attachments/assets/bd391662-5c61-49e9-8c81-1ac4e1e1cc40)
+
 1.  UC-1 [Modify Teams]: Admin can update or delete all existing teams.
 2.  UC-2 [Create Teams]: Admin can create new teams. 
 3.  UC-3 [Manage Teams as Coach]: Coach can create teams, update teams, and invite players. 
