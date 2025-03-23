@@ -2,11 +2,9 @@
 Group project for the module 'Internet Technology'. It is a minimal web-based team management application for sports teams to organize their association, teams, players, games, etc.
 
 ## Contents
-...
-
+... To be done
 
 ## Analysis
-
 
 ### Scenario
 TeamManager is a team management tool that allows coaches and players to organize training sessions, matches, and team communication efficiently.
@@ -22,7 +20,7 @@ TeamManager is a team management tool that allows coaches and players to organiz
 8.	As a User (Player), I want to receive notifications about future scheduled trainings and matches of my team.
 9.	As a User (Player), I want to mark myself as available or unavailable for future scheduled trainings and matches of my team.
 
-### Use Case
+### Use Cases
 ![XP7DJiCm383lUGfh9pWCYV-V0zgq6r8HsiO3U8dNMUG7fUvGXNXt5gKzB1Jj5iMVxS_sh16CqZghB6q5943aUYTWE98M3bufr18Yp8rZtxyN0VMkVxzPx2WgbN3qjIMOh0aTLEYn9aTUODKrGcu2tme0SY6OJk6i2eQt7IIyEOSdU5zCBmja4Gc5Zf0hbPZi08d9dJ83sEH83rydzb_a](https://github.com/user-attachments/assets/bd391662-5c61-49e9-8c81-1ac4e1e1cc40)
 
 1.  UC-1 [Modify Teams]: Admin can update or delete all existing teams.
@@ -36,18 +34,15 @@ TeamManager is a team management tool that allows coaches and players to organiz
 9.  UC-9 [Mark Availability]: Players can mark themselves as available or unavailable for scheduled training sessions and matches.
 
 ## Design
-...
 
-
-### Wireframe
+### Wireframes
 ![Bildschirmfoto 2025-03-23 um 23 03 03](https://github.com/user-attachments/assets/f11ce79e-6fd2-43b0-a6f5-270f06bc405a)
 ![Bildschirmfoto 2025-03-23 um 23 03 31](https://github.com/user-attachments/assets/6df1cd3f-785f-466b-a51f-de18bbd48f84)
 ![Bildschirmfoto 2025-03-23 um 23 03 42](https://github.com/user-attachments/assets/5b7a7e89-1813-4b74-bb03-8d2cbdecc44c)
 ![Bildschirmfoto 2025-03-23 um 23 03 51](https://github.com/user-attachments/assets/7616a4d1-c97a-47e0-9ecb-6aa155742402)
 
-
 ### Prototype
-🚧 A clickable prototype can be designed using Budibase or Figma before connecting to the backend.
+🚧 A clickable prototype can be designed using Budibase or Figma before connecting to the backend. To be done
 
 ### Domain Model
 ![6d06fa22-0919-46d3-9cb8-63fd5a073ae2](https://github.com/user-attachments/assets/9038eea1-da37-45c1-be5f-c59f54a04ac8)
@@ -118,9 +113,9 @@ Attendance Update	/api/attendance/{event_id}	POST
 
 ## Project Management
 Roles
-•	Backend Developer: [Name]
-•	Frontend Developer: [Name]
-•	Database Engineer: [Name]
+•	Backend Developer: Ray Pinzon, Sharbel Yakoub
+•	Frontend Developer: Anna Geiser
+•	Database Engineer: Armir Lecaj
 
 ### Milestones
 1.	Analysis: Define use cases and user stories.
@@ -130,7 +125,6 @@ Roles
 5.	Security: Implement authentication and authorization.
 6.	Testing & Optimization: Unit and integration tests.
 7.	Deployment: Host the application online.
-
 
 ## Maintainer
 Anna Geiser
