@@ -40,10 +40,11 @@ TeamManager is a team management tool that allows coaches and players to organiz
 
 
 ### Wireframe
-![Bildschirmfoto 2025-03-23 um 23 03 31](https://github.com/user-attachments/assets/6df1cd3f-785f-466b-a51f-de18bbd48f84)
 ![Bildschirmfoto 2025-03-23 um 23 03 03](https://github.com/user-attachments/assets/f11ce79e-6fd2-43b0-a6f5-270f06bc405a)
-![Bildschirmfoto 2025-03-23 um 23 03 51](https://github.com/user-attachments/assets/7616a4d1-c97a-47e0-9ecb-6aa155742402)
+![Bildschirmfoto 2025-03-23 um 23 03 31](https://github.com/user-attachments/assets/6df1cd3f-785f-466b-a51f-de18bbd48f84)
 ![Bildschirmfoto 2025-03-23 um 23 03 42](https://github.com/user-attachments/assets/5b7a7e89-1813-4b74-bb03-8d2cbdecc44c)
+![Bildschirmfoto 2025-03-23 um 23 03 51](https://github.com/user-attachments/assets/7616a4d1-c97a-47e0-9ecb-6aa155742402)
+
 
 ### Prototype
 🚧 A clickable prototype can be designed using Budibase or Figma before connecting to the backend.
