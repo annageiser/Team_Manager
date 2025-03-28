@@ -1,8 +1,8 @@
 # Team Manager
-Group project for the module 'Internet Technology'. It is a minimal web-based team management application for sports teams to organize their association, teams, players, games, etc.
+Team Manager is a web-based application designed to help sports teams efficiently manage their organizational activities, including team coordination, player management, and event scheduling.
 
 ## Contents
-... To be done
+[Analysis](#Analysis)
 
 ## Analysis
 
