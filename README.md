@@ -1,6 +1,7 @@
 # Team Manager
 Team Manager is a web-based application designed to help sports teams efficiently manage their organizational activities, including team coordination, player management, and event scheduling.
 
+
 ## Contents
 - [Analysis](#Analysis)
   - [Scenario](#Scenario)
@@ -22,10 +23,13 @@ Team Manager is a web-based application designed to help sports teams efficientl
     - [Maintainer](#Maintainer)
     - [License](#license)
 
+
 ## Analysis
+
 
 ### Scenario
 TeamManager is a team management tool that allows coaches and players to organize training sessions, matches, and team communication efficiently.
+
 
 ### User Stories
 1.	As an Admin, I want to be able to modify all existing teams.
@@ -37,6 +41,7 @@ TeamManager is a team management tool that allows coaches and players to organiz
 7.	As a User (Player), I want to join teams via an invite from the creator of the team within TeamManager.
 8.	As a User (Player), I want to receive notifications about future scheduled trainings and matches of my team.
 9.	As a User (Player), I want to mark myself as available or unavailable for future scheduled trainings and matches of my team.
+
 
 ### Use Cases
 ![XP7DJiCm383lUGfh9pWCYV-V0zgq6r8HsiO3U8dNMUG7fUvGXNXt5gKzB1Jj5iMVxS_sh16CqZghB6q5943aUYTWE98M3bufr18Yp8rZtxyN0VMkVxzPx2WgbN3qjIMOh0aTLEYn9aTUODKrGcu2tme0SY6OJk6i2eQt7IIyEOSdU5zCBmja4Gc5Zf0hbPZi08d9dJ83sEH83rydzb_a](https://github.com/user-attachments/assets/bd391662-5c61-49e9-8c81-1ac4e1e1cc40)
@@ -51,7 +56,9 @@ TeamManager is a team management tool that allows coaches and players to organiz
 8.  UC-8 [Receive Notifications]: Players receive notifications about future scheduled events. 
 9.  UC-9 [Mark Availability]: Players can mark themselves as available or unavailable for scheduled training sessions and matches.
 
+
 ## Design
+
 
 ### Wireframe
 ![Bildschirmfoto 2025-03-23 um 23 03 03](https://github.com/user-attachments/assets/f11ce79e-6fd2-43b0-a6f5-270f06bc405a)
@@ -59,8 +66,10 @@ TeamManager is a team management tool that allows coaches and players to organiz
 ![Bildschirmfoto 2025-03-23 um 23 03 42](https://github.com/user-attachments/assets/5b7a7e89-1813-4b74-bb03-8d2cbdecc44c)
 ![Bildschirmfoto 2025-03-23 um 23 03 51](https://github.com/user-attachments/assets/7616a4d1-c97a-47e0-9ecb-6aa155742402)
 
+
 ### Prototype
 🚧 A clickable prototype can be designed using Budibase or Figma before connecting to the backend. To be done
+
 
 ### Domain Design
 ![6d06fa22-0919-46d3-9cb8-63fd5a073ae2](https://github.com/user-attachments/assets/9038eea1-da37-45c1-be5f-c59f54a04ac8)
@@ -69,6 +78,7 @@ TeamManager is a team management tool that allows coaches and players to organiz
 •	Player (id, name, team_id, email)
 •	Event (id, date, type, team_id)
 •	Attendance (id, player_id, event_id, status)
+
 
 ### Business Logic
 Based on UC-4, attendance tracking follows these rules:
@@ -83,6 +93,7 @@ Body:
   "status": "present"
 }
 
+
 ## Implementation
 Backend Technology
 This web application is built using Spring Boot and the following dependencies:
@@ -90,6 +101,7 @@ This web application is built using Spring Boot and the following dependencies:
 •	Spring Data JPA (Database access)
 •	Spring Security (Authentication & Authorization)
 •	H2 Database (Demo mode) / MySQL (Production)
+
 
 Database Example (MySQL)
 CREATE TABLE players (
@@ -99,6 +111,7 @@ CREATE TABLE players (
     team_id INT
 );
 
+
 Swagger API Documentation Dependency
 <dependency>
     <groupId>org.springdoc</groupId>
@@ -106,10 +119,12 @@ Swagger API Documentation Dependency
     <version>2.3.0</version>
 </dependency>
 
+
 ### Frontend Technology
 •	React (UI Framework)
 •	React Router (Navigation)
 •	Axios (API Calls)
+
 
 Views and API Usage
 View	API Endpoint	Method
@@ -118,23 +133,28 @@ Player Management	/api/players	GET
 Training Schedule	/api/events	GET
 Attendance Update	/api/attendance/{event_id}	POST
 
+
 ### Execution
 1.	Clone this repository.
 2.	Start the backend with mvn spring-boot:run.
 3.	Start the frontend with npm start.
 4.	Access the web application at http://localhost:3000.
 
+
 ### Deployment to PaaS
 1.	Use Render or Heroku for backend hosting.
 2.	Use Vercel or Netlify for frontend hosting.
 3.	Set up a PostgreSQL/MySQL database in production.
 
+
 ## Project Management
+
 
 ### Roles
 •	Backend Developer: Ray Pinzon, Sharbel Yakoub
 •	Frontend Developer: Anna Geiser
 •	Database Engineer: Armir Lecaj
+
 
 ### Milestones
 1.	Analysis: Define use cases and user stories.
@@ -145,12 +165,13 @@ Attendance Update	/api/attendance/{event_id}	POST
 6.	Testing & Optimization: Unit and integration tests.
 7.	Deployment: Host the application online.
 
+
 #### Maintainer
-Anna Geiser
-Armir Lecaj
-Ray Pinzon
-Sharbel Yakoub
+- Anna Geiser
+- Armir Lecaj
+- Ray Pinzon
+- Sharbel Yakoub
+
 
 #### License
-Apache License, Version 2.0
-![image](https://github.com/user-attachments/assets/31e71217-889a-4add-90d8-34c7e8f34e1d)
+- [Apache License, Version 2.0](#https://github.com/FHNW-INT/Pizzeria_Reference_Project/blob/main/blob/master/LICENSE)
