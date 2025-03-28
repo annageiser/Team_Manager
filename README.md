@@ -7,17 +7,20 @@ Team Manager is a web-based application designed to help sports teams efficientl
   - [User Stories](#UserStories)
   - [Use Case](#UseCase)
 - [Design](#Design)
-  - [Prototype Design](#PrototypeDesign)
+  - [Wireframe](#Wireframe)
+  - [Prototype](#Prototype)
   - [Domain Design](#DomainDesign)
   - [Business Logic](#BusinessLogic)
 - [Implementation](#Implementation)
   - [Backend Technology](#BackendTechnology)
   - [Frontend Technology](#FrontendTechnology)
+- [Execution](#Execution)
+  - [Deployment to PaaS](#DeploymenttoPaaS)
 - [Project Management](#ProjectManagement)
   - [Roles](#Roles)
   - [Milestones](#Milestones)
-- [Maintainer](#Maintainer)
-- [License] (#License)
+    - [Maintainer](#Maintainer)
+    - [License](#license)
 
 ## Analysis
 
@@ -50,7 +53,7 @@ TeamManager is a team management tool that allows coaches and players to organiz
 
 ## Design
 
-### Wireframes
+### Wireframe
 ![Bildschirmfoto 2025-03-23 um 23 03 03](https://github.com/user-attachments/assets/f11ce79e-6fd2-43b0-a6f5-270f06bc405a)
 ![Bildschirmfoto 2025-03-23 um 23 03 31](https://github.com/user-attachments/assets/6df1cd3f-785f-466b-a51f-de18bbd48f84)
 ![Bildschirmfoto 2025-03-23 um 23 03 42](https://github.com/user-attachments/assets/5b7a7e89-1813-4b74-bb03-8d2cbdecc44c)
@@ -59,7 +62,7 @@ TeamManager is a team management tool that allows coaches and players to organiz
 ### Prototype
 🚧 A clickable prototype can be designed using Budibase or Figma before connecting to the backend. To be done
 
-### Domain Model
+### Domain Design
 ![6d06fa22-0919-46d3-9cb8-63fd5a073ae2](https://github.com/user-attachments/assets/9038eea1-da37-45c1-be5f-c59f54a04ac8)
 
 •	Team (id, name, coach_id)
@@ -72,7 +75,7 @@ Based on UC-4, attendance tracking follows these rules:
 •	A player can only confirm attendance once per event.
 •	If the event is canceled, all attendance records are marked as void.
 
-### Path: /api/attendance/{event_id}
+Path: /api/attendance/{event_id}
 Method: POST
 Body:
 {
@@ -80,7 +83,7 @@ Body:
   "status": "present"
 }
 
-### Implementation
+## Implementation
 Backend Technology
 This web application is built using Spring Boot and the following dependencies:
 •	Spring Boot (Main framework)
@@ -88,7 +91,7 @@ This web application is built using Spring Boot and the following dependencies:
 •	Spring Security (Authentication & Authorization)
 •	H2 Database (Demo mode) / MySQL (Production)
 
-### Database Example (MySQL)
+Database Example (MySQL)
 CREATE TABLE players (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255),
@@ -96,7 +99,7 @@ CREATE TABLE players (
     team_id INT
 );
 
-### Swagger API Documentation Dependency
+Swagger API Documentation Dependency
 <dependency>
     <groupId>org.springdoc</groupId>
     <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
@@ -108,7 +111,7 @@ CREATE TABLE players (
 •	React Router (Navigation)
 •	Axios (API Calls)
 
-### Views and API Usage
+Views and API Usage
 View	API Endpoint	Method
 Team Overview	/api/teams	GET
 Player Management	/api/players	GET
@@ -127,7 +130,8 @@ Attendance Update	/api/attendance/{event_id}	POST
 3.	Set up a PostgreSQL/MySQL database in production.
 
 ## Project Management
-Roles
+
+### Roles
 •	Backend Developer: Ray Pinzon, Sharbel Yakoub
 •	Frontend Developer: Anna Geiser
 •	Database Engineer: Armir Lecaj
@@ -141,12 +145,12 @@ Roles
 6.	Testing & Optimization: Unit and integration tests.
 7.	Deployment: Host the application online.
 
-## Maintainer
+#### Maintainer
 Anna Geiser
 Armir Lecaj
 Ray Pinzon
 Sharbel Yakoub
 
-## License
+#### License
 Apache License, Version 2.0
 ![image](https://github.com/user-attachments/assets/31e71217-889a-4add-90d8-34c7e8f34e1d)
