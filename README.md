@@ -2,7 +2,20 @@
 Team Manager is a web-based application designed to help sports teams efficiently manage their organizational activities, including team coordination, player management, and event scheduling.
 
 ## Contents
-[Analysis](#Analysis)
+- [Analysis](#Analysis)
+  - [Scenario](#Scenario)
+  - [User Stories](#User Stories)
+  - [Use Case](#Use Case)
+- [Design](#Design)
+  - [Prototype Design](#Prototype Design)
+  - [Domain Design](#Domain Design)
+  - [Business Logic](#Business Logic)
+- [Implementation](#Implementation)
+  - [Backend Technology](#Backend Technology)
+  - [Frontend Technology](#Frontend Technology)
+- [Project Management](#Project Management)
+  - [Roles](#Roles)
+  - [Milestones](#Milestones)
 
 ## Analysis
 
