@@ -4,18 +4,20 @@ Team Manager is a web-based application designed to help sports teams efficientl
 ## Contents
 - [Analysis](#Analysis)
   - [Scenario](#Scenario)
-  - [User Stories](#User Stories)
-  - [Use Case](#Use Case)
+  - [User Stories](#UserStories)
+  - [Use Case](#UseCase)
 - [Design](#Design)
-  - [Prototype Design](#Prototype Design)
-  - [Domain Design](#Domain Design)
-  - [Business Logic](#Business Logic)
+  - [Prototype Design](#PrototypeDesign)
+  - [Domain Design](#DomainDesign)
+  - [Business Logic](#BusinessLogic)
 - [Implementation](#Implementation)
-  - [Backend Technology](#Backend Technology)
-  - [Frontend Technology](#Frontend Technology)
-- [Project Management](#Project Management)
+  - [Backend Technology](#BackendTechnology)
+  - [Frontend Technology](#FrontendTechnology)
+- [Project Management](#ProjectManagement)
   - [Roles](#Roles)
   - [Milestones](#Milestones)
+- [Maintainer](#Maintainer)
+- [License] (#License)
 
 ## Analysis
 
