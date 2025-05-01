@@ -1,7 +1,7 @@
-package com.teammanager.backend.service;
+package ch.fhnw.teammanager.service;
 
-import com.teammanager.backend.model.Team;
-import com.teammanager.backend.repository.TeamRepository;
+import ch.fhnw.teammanager.model.Team;
+import ch.fhnw.teammanager.repository.TeamRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -1,7 +1,7 @@
-package com.teammanager.backend.controller;
+package ch.fhnw.teammanager.controller;
 
-import com.teammanager.backend.model.Player;
-import com.teammanager.backend.service.PlayerService;
+import ch.fhnw.teammanager.model.Player;
+import ch.fhnw.teammanager.service.PlayerService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

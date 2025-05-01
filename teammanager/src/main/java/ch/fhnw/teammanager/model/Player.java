@@ -1,4 +1,4 @@
-package com.teammanager.backend.model;
+package ch.fhnw.teammanager.model;
 
 import jakarta.persistence.*;
 

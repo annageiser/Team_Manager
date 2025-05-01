@@ -1,6 +1,6 @@
-package com.teammanager.backend.repository;
+package ch.fhnw.teammanager.repository;
 
-import com.teammanager.backend.model.Team;
+import ch.fhnw.teammanager.model.Team;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface TeamRepository extends JpaRepository<Team, Long> {}
