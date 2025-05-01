@@ -1,13 +1,13 @@
-package com.teammanager.backend;
+package ch.fhnw.manager;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PlayerManagerApplicationTests {
+class ManagerApplicationTests {
 
-    @Test
-    void contextLoads() {
-    }
+	@Test
+	void contextLoads() {
+	}
 
 }
