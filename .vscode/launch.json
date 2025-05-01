@@ -1,14 +1,4 @@
 {
-    "configurations": [
-        {
-            "type": "java",
-            "name": "Spring Boot-TeamManagerApplication<backend>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "mainClass": "com.teammanager.backend.TeamManagerApplication",
-            "projectName": "backend",
-            "args": "",
-            "envFile": "${workspaceFolder}/.env"
-        }
-    ]
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
