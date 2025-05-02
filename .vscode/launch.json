@@ -1,11 +1,18 @@
 {
     "configurations": [
-    {
-        "name": "Launch Chrome",
-        "request": "launch",
-        "type": "chrome",
-        "url": "http://localhost:8080",
-        "webRoot": "${workspaceFolder}"
-    }
+        {
+            "type": "java",
+            "name": "TeamManagerApplication",
+            "request": "launch",
+            "mainClass": "ch.fhnw.teammanager.TeamManagerApplication",
+            "projectName": "backend"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        }
     ]
 }
