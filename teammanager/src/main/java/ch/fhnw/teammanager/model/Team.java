@@ -8,6 +8,7 @@ public class Team {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
+    private Long coachId; // Coach-Referenz
 
     // Getters and Setters
 

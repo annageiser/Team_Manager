@@ -12,7 +12,9 @@ public class Player {
     private String date_of_birth;
     private String email;
     private String position;
-
+    private Long teamId; // Team-Referenz
+    
+    
     // Getters and Setters
 
     public Long getPlayer_id() {
