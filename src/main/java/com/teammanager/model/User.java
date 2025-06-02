@@ -32,8 +32,4 @@ public class User {
     
     @OneToMany(mappedBy = "player")
     private List<Participation> participations;
-}
-
-enum Role {
-    ADMIN, PLAYER, COACH
 } 

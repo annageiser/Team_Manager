@@ -6,7 +6,6 @@ import com.teammanager.model.User;
 import com.teammanager.model.ParticipationStatus;
 import com.teammanager.model.EventType;
 import com.teammanager.repository.ParticipationRepository;
-import com.teammanager.repository.EventRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,9 +19,6 @@ public class ParticipationService {
     
     @Autowired
     private ParticipationRepository participationRepository;
-    
-    @Autowired
-    private EventRepository eventRepository;
     
     public Participation respondToEvent(Event event, User player, ParticipationStatus status) {
         Participation participation = participationRepository
