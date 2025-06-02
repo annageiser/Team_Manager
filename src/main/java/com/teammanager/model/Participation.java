@@ -26,8 +26,4 @@ public class Participation {
     private ParticipationStatus status;
     
     private LocalDateTime responseTime;
-}
-
-enum ParticipationStatus {
-    CONFIRMED, DECLINED, PENDING
 } 

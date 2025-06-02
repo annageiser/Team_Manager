@@ -6,6 +6,7 @@ import com.teammanager.dto.EventDTO;
 import com.teammanager.model.User;
 import com.teammanager.model.Team;
 import com.teammanager.model.Event;
+import com.teammanager.model.ParticipationStatus;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -4,6 +4,7 @@ import com.teammanager.model.Participation;
 import com.teammanager.model.Event;
 import com.teammanager.model.User;
 import com.teammanager.model.ParticipationStatus;
+import com.teammanager.model.EventType;
 import com.teammanager.repository.ParticipationRepository;
 import com.teammanager.repository.EventRepository;
 import org.springframework.beans.factory.annotation.Autowired;
