@@ -19,6 +19,13 @@ server:
   servlet:
     context-path: /api
 
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+  api-docs:
+    path: /v3/api-docs
+
 security:
   basic:
     enabled: true

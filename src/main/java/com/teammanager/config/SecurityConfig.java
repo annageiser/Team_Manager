@@ -9,6 +9,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.security.web.header.writers.StaticHeadersWriter;
 
 @Configuration
 @EnableWebSecurity
@@ -19,14 +21,18 @@ public class SecurityConfig {
         http
             .csrf().disable()
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/api/events/public/**").permitAll()
+                .requestMatchers("/swagger-ui/**", "/v3/api-docs/**").permitAll()
                 .requestMatchers("/h2-console/**").permitAll()
                 .anyRequest().authenticated()
             )
-            .httpBasic();  // Budibase will use Basic Authentication
-        
-        // Enable h2-console
-        http.headers().frameOptions().disable();
+            .addFilterBefore(new GitHubTokenAuthFilter(), UsernamePasswordAuthenticationFilter.class)
+            .headers(headers -> headers
+                .addHeaderWriter(new StaticHeadersWriter("Access-Control-Allow-Origin", "https://teammanager.budibase.app"))
+                .addHeaderWriter(new StaticHeadersWriter("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS"))
+                .addHeaderWriter(new StaticHeadersWriter("Access-Control-Allow-Headers", "*"))
+                .addHeaderWriter(new StaticHeadersWriter("Access-Control-Allow-Credentials", "true"))
+                .frameOptions().disable()
+            );
         
         return http.build();
     }
