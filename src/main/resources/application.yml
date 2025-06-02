@@ -18,13 +18,18 @@ server:
   port: 8080
   servlet:
     context-path: /api
+  forward-headers-strategy: framework
 
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
     operationsSorter: method
+    disable-swagger-default-url: true
+    use-root-path: true
   api-docs:
     path: /v3/api-docs
+  show-actuator: true
+  paths-to-match: /api/**
 
 security:
   basic:
