@@ -34,7 +34,3 @@ public class Event {
     
     private Integer maxParticipants;
 }
-
-enum EventType {
-    TRAINING, GAME, MEETING
-} 
