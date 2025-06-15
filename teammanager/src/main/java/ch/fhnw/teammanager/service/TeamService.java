@@ -23,6 +23,6 @@ public class TeamService {
     }
 
     public void deleteById(Long id) {
-        // TODO: Implement deletion logic, e.g., repository.deleteById(id);
+        repository.deleteById(id);
     }
 }

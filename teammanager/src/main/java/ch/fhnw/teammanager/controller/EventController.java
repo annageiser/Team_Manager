@@ -16,8 +16,8 @@ public class EventController {
     }
 
     @PostMapping
-    public Event createEvent(@RequestBody Event event) {
-        return eventService.createEvent(event);
+    public Event save(@RequestBody Event event) {
+        return eventService.save(event);
     }
 
     @GetMapping("/team/{teamId}")
