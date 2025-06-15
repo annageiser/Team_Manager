@@ -72,4 +72,8 @@ public class Player {
     public void setTeamId(Long teamId) {
         this.teamId = teamId;
     }
+
+    public void setId(Long id) {
+        this.player_id = id;
+    }
 }
