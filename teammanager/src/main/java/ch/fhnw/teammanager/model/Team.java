@@ -27,4 +27,12 @@ public class Team {
     public void setName(String name) {
         this.name = name;
     }
+
+    public Long getCoachId() {
+        return coachId;
+    }
+
+    public void setCoachId(Long coachId) {
+        this.coachId = coachId;
+    }
 }

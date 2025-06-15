@@ -64,4 +64,12 @@ public class Player {
     public void setPosition(String position) {
         this.position = position;
     }
+
+    public Long getTeamId() {
+        return teamId;
+    }
+
+    public void setTeamId(Long teamId) {
+        this.teamId = teamId;
+    }
 }
