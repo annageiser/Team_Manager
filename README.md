@@ -10,6 +10,13 @@ A simplified team management application for sports clubs with Google Calendar i
 - Google Calendar Integration
 - Responsive Design
 
+## Documentation
+
+- [Architecture Overview](docs/architecture.md) - System architecture and technical details
+- [API Documentation](docs/api.md) - Detailed API endpoint documentation
+- [Development Guide](docs/development.md) - Setup and contribution guidelines
+- [User Guide](docs/user-guide.md) - End-user documentation and instructions
+
 ## Prerequisites
 
 - Java 17
