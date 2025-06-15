@@ -12,14 +12,14 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
-            .csrf().disable()
-            .authorizeHttpRequests()
-            .requestMatchers("/api/admin/**").hasRole("ADMIN")
-            .requestMatchers("/api/coach/**").hasRole("COACH")
-            .requestMatchers("/api/player/**").hasRole("PLAYER")
-            .anyRequest().permitAll()
-            .and()
-            .httpBasic();
+            .csrf(csrf -> csrf.disable())
+            .authorizeHttpRequests(auth -> auth
+                .requestMatchers("/api/admin/**").hasRole("ADMIN")
+                .requestMatchers("/api/coach/**").hasRole("COACH")
+                .requestMatchers("/api/player/**").hasRole("PLAYER")
+                .anyRequest().permitAll()
+            )
+            .httpBasic(customizer -> {});
         return http.build();
     }
 

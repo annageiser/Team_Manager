@@ -9,7 +9,7 @@ public class User {
     private Long id;
     private String username;
     private String password;
-    private String role; // "ADMIN", "COACH", "PLAYER"
+    private String role; // "ADMIN", "STAFF", "PLAYER"
 
 
     // Getter/Setter
@@ -38,7 +38,6 @@ public class User {
     }
 
     public void setId(Long id2) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'setId'");
     }
 
