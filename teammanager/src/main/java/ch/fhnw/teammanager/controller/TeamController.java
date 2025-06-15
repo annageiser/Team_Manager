@@ -1,0 +1,38 @@
+package ch.fhnw.teammanager.controller;
+
+import ch.fhnw.teammanager.model.Team;
+import ch.fhnw.teammanager.service.TeamService;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/api/teams")
+public class TeamController {
+    private final TeamService service;
+
+    public TeamController(TeamService service) {
+        this.service = service;
+    }
+
+    @GetMapping
+    public List<Team> getAll() {
+        return service.getAll();
+    }
+
+    @PostMapping
+    public Team create(@RequestBody Team team) {
+        return service.save(team);
+    }
+
+    @PutMapping("/{id}")
+    public Team updateTeam(@PathVariable Long id, @RequestBody Team team) {
+        team.setId(id);
+        return service.save(team);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteTeam(@PathVariable Long id) {
+        service.deleteById(id);
+    }
+}
