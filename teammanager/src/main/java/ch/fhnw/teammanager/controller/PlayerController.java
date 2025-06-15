@@ -24,4 +24,15 @@ public class PlayerController {
     public Player create(@RequestBody Player player) {
         return service.save(player);
     }
+
+    @PutMapping("/{id}")
+    public Player updatePlayer(@PathVariable Long id, @RequestBody Player player) {
+        player.setId(id);
+        return service.save(player);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deletePlayer(@PathVariable Long id) {
+        service.deleteById(id);
+    }
 }

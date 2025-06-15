@@ -25,8 +25,14 @@ public class EventController {
         return eventService.getEventsByTeamId(teamId);
     }
 
+    @PutMapping("/{id}")
+    public Event updateEvent(@PathVariable Long id, @RequestBody Event event) {
+        event.setId(id);
+        return eventService.save(event);
+    }
+
     @DeleteMapping("/{id}")
     public void deleteEvent(@PathVariable Long id) {
-        eventService.deleteEvent(id);
+        eventService.deleteById(id);
     }
 }

@@ -24,4 +24,15 @@ public class TeamController {
     public Team create(@RequestBody Team team) {
         return service.save(team);
     }
+
+    @PutMapping("/{id}")
+    public Team updateTeam(@PathVariable Long id, @RequestBody Team team) {
+        team.setId(id);
+        return service.save(team);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteTeam(@PathVariable Long id) {
+        service.deleteById(id);
+    }
 }

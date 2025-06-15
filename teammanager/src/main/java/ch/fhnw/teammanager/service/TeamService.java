@@ -21,4 +21,8 @@ public class TeamService {
     public Team save(Team team) {
         return repository.save(team);
     }
+
+    public void deleteById(Long id) {
+        // TODO: Implement deletion logic, e.g., repository.deleteById(id);
+    }
 }
