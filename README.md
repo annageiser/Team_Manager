@@ -1,4 +1,4 @@
-# TeamManager
+# ⚽️ Team Manager
 
 A simplified team management application for sports clubs with Google Calendar integration. https://teammanager.budibase.app/app/teammanager#/dashboard
 
